@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    line-height: 1.6;
+    font-size:1.1rem;
+    overflow-x:hidden;
+    width:100vw;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4{
+    line-height: 1.3;
+}
+
+/* Top-container */
+.top-container{
+    background: url(../img/mainPic.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    min-height: 650px;
+    
+}
+
+.top-container .overlay{
+    background:rgba(0,0,0,0.44);
+    width: 100vw;
+    height: 100%;
+    border:0;
+}
+
+.top-bar{
+    height: 80px;
+    position: fixed;
+    top:0;
+    background: #8b1111e7;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3.5rem 0 2.7rem;
+    transition: all .5s;
+    z-index: 999;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.95);
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+    width: 10%;
+}
+
+.logo img{
+    width: 40px;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+.logo h1{
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+/* Navigation */
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-self: end;
+}
+
+.nav-container nav ul{
+    display: flex;
+    padding:0;
+    border:0;
+}
+
+.nav-container nav ul li a{
+    padding: 1rem;
+    white-space: nowrap;
+    color:#fff;
+    font-weight: bold;
+}
+
+.nav-container nav ul li:hover a{
+    color: #ccc;
+    transition:all .2s linear;
+}
+
+.toggle{
+    display:none;
+}
+
+/* Header */
+header{
+    padding: 0 5rem;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: start;
+    justify-content: center;
+    min-height: 650px;
+    transition: all .5s;
+    
+}
+
+header>div{
+    padding-top:4rem;
+}
+
+ header h1{
+    font-size: 4.2rem;
+    text-transform: uppercase;
+}
+
+header h1 div:first-child{
+    color:#8b1111;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;  
+    margin-top: .1rem;
+}
+
+header h1 div:nth-child(2){
+    color:#8b1111;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;  
+    margin-bottom: .1rem;
+}
+
+header p{
+    text-transform: capitalize;
+}
+
+header a{
+    background:#8b1111;
+    margin: 1rem 0;
+    color: #fff;
+    padding: .5rem 2rem;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+header a:hover, header a:focus{
+    background:#333;
+    transition: all .3s ease-out;
+}
+
+/* About Us */
+.about-us{
+    background: #f3f3f3;
+    color: #000;
+    position: relative;
+    width: 100vw;
+    padding: 140px 0 3.5rem 0;
+    justify-content: center;
+    display: grid;
+    grid-gap: 20px;
+    overflow: hidden;
+    
+}
+
+.about-us h2{
+    color:#8b1111;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #8b1111b4;
+    justify-self: center;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+.about-us figure{
+    width:100%;
+    clear: both;
+    
+}
+
+.about-us figure img{
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+}
+
+.about-us .sub-container{
+    color: #8b1111;
+    display:flex;
+    flex-direction: column;
+}
+
+.sub-title{
+    background: #8b1111;
+    color: #fff;
+    width: 30%;
+    border-radius: 0 20px 20px 0;
+    padding: .5rem 1rem .5rem 7rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+/* Mission */
+.about-us .mission h4{
+    padding: 5rem 7rem 1rem 7rem;
+    font-size: 2rem;
+    
+    text-transform: capitalize;
+    
+}
+
+.about-us .mission p{
+    line-height: 2;
+    font-size: 1.2rem;
+    padding: .5rem 7rem 2rem 7rem;
+    text-align: start;
+    color: #000;
+}
+
+.about-us .mission p span{
+    color: #8b1111;
+}
+
+.about-us .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 7rem 7rem 7rem;
+    transition: .5s;
+
+}
+
+.card{
+    justify-self: center;
+    background: transparent;
+    margin: 2rem;
+    color: #fff;
+    width: 270px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.card img{
+    width:270px;
+    height: auto;
+}
+
+.card .name{
+    padding: 0 1rem .5rem 1rem;
+    border-radius: 1px 1px 20px 20px;
+    background: #8b1111;
+}
+.card figcaption{
+    font-size: 1.3rem;
+    font-weight: bold;
+    white-space: nowrap;
+    word-spacing: .2rem;
+}
+.card h4{
+    white-space: nowrap;
+    font-size:1.1rem;
+    color: #ddd;
+    font-weight: normal;
+
+}
+
+/* Facility */
+
+
+.facility-container{
+    padding:6rem 0 1rem 0;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    
+}
+
+.facility-container img , .facility-container a{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.facility-container a:nth-child(2){
+    grid-row: auto/span 2;
+}
+
+.facility-container a:nth-child(2) img{
+    max-height: 100%;
+}
+
+/* Programs */
+.program-container{
+    background: url(../img/programs.jpg) center center/cover;
+    width:100vw;
+}
+
+.program-container .overlay{
+    background: rgba(0,0,0,0.5);
+    padding: 140px 0 3.5rem 0;
+    width: 100vw;
+    display: grid;
+    grid-gap: 1.3rem;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.program-container h2{
+    color:#fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    width:200px;
+    justify-self: center;
+    margin-bottom: 3rem;
+    white-space: nowrap;
+}
+
+.programs{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 350px));
+    grid-auto-rows: 550px;
+    grid-gap: 2.5rem;
+    padding: 0 5rem;
+    width:100vw;
+    justify-content: center;
+}
+
+.program{
+    display:grid;
+    grid-template-rows: 300px auto 47px;
+    box-shadow: 0 1px 5px rgba(49, 49, 49, 0.8);
+    border-radius: 10px; 
+    height: 100%;
+    
+}
+
+.program figure{
+    max-height: 100px;
+    border-radius: 10px 10px 0 0;
+}
+
+.program img{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explain{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    color: #8b1111;
+    background: #fff;
+    height: 100%;
+    justify-content: center;
+}
+
+.explain h3{
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+}
+
+
+.program a{
+    background: #8b1111;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.6rem 0;
+    display:block;
+    border-radius: 0 0 10px 10px;
+}
+
+.program a:hover, .program a:focus{
+    background: #333;
+    transition: all .2s ease-in;
+}
+/* Location */
+.location-container{
+    color:#8b1111;
+    padding: 140px 0 90px 0;
+    display: grid;
+    width: 100%;
+}
+
+.location-container h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #8b1111;
+    width:200px;
+    justify-self: center;
+    margin-bottom: 3rem;
+    white-space: nowrap;
+}
+.map-container{
+    display:grid;
+    grid-template-columns: 280px auto;
+    padding: 0 5rem;
+
+}
+
+.map-container p{
+    text-align: end;
+}
+
+.left-box{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    min-width: 230px;
+    max-width: 280px;
+}
+
+.text{
+    background: #8b1111;
+    color:#fff;
+    padding: 2rem 2rem;
+    border-radius: 20px 0 0 0;
+    line-height: 1.8;
+    
+}
+
+.text>p:first-child{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.text>p:nth-child(2){
+    font-size: 1.15rem;
+}
+
+.howtoget{
+    border-radius: 0 0 0 20px;
+    color:#8b1111;
+    font-size: 1rem;
+    height:100%;
+    font-weight: bold;
+    text-align:end;
+    background: #ddd;
+    padding: 3rem 2rem;
+}
+
+.howtoget>p:nth-child(even){
+    padding-bottom: 1.5rem;
+}
+
+/* Embeded Google Maps */
+.map-responsive{
+    height:100%;
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.map-responsive iframe{
+    width:100%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Contact */
+ .contact{
+    background: url(../img/hongKong.jpg) center center/cover;
+    padding: 140px 0 3.5rem 0;
+    display: grid;
+    width: 100%;
+}
+
+.contact h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    width:170px;
+    justify-self: center;
+    margin-bottom: 3rem;
+    white-space: nowrap;
+}
+
+.wrapper{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    background: rgb(145, 27, 27);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.wrapper>*{
+    padding:1em;
+}
+
+.company-info{
+    background: #fff;
+    color:#8b1111;
+    border-radius: 10px 0 0 10px;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.company-info ul{
+    list-style: none;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+.company-info ul li{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.company-info h3, .company-info ul{
+    margin:0 0 1rem 0;
+}
+
+.company-info span{
+    width:20px;
+    padding-right: 1rem;
+}
+
+.company-info span i{
+    font-size:100%;
+}
+
+
+/* Form Styles */
+.register{
+    color: #fff;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.register form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.register label{
+    display:block;
+}
+
+.register form p{
+    margin:0;
+}
+
+.register form input{
+    margin:0;
+}
+
+.register form .full{
+    grid-column: 1/3;
+}
+
+.register form input, .register form textarea, .register form select{
+    width:100%;
+    padding:.6rem;
+    border-radius: 10px;
+    border:0;
+}
+
+.register form select{
+    font-family: 'Montserrat', sans-serif;
+    color:#8b1111;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.register .submit input{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: #fff;
+    font-size:1rem;
+    cursor: pointer;
+    color:#8b1111;
+    border-radius: 10px;
+}
+
+.register .submit input:hover, .register .submit input:focus{
+    background: #180b1a;
+    color:#fff;
+    transition: all .3s ease-out;
+}
+
+
+
+
+
+/* Media Queries */
+@media(max-width:991px){
+    /* Nav Media Query */
+    .toggle{
+        display:block;
+        cursor: pointer;
+    }
+
+    .nav-container nav{
+        /* display: none; */
+        position: absolute;
+        transition: 0.5s;
+        background: rgba(0,0,0,0.95);
+        width: 100%;
+        top:80px;
+        left:-100%;
+        box-shadow: 0 1px 5px rgba(49, 49, 49, 0.8);
+    }
+
+    .nav-container nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-container nav ul li{
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(197, 197, 197, 0.1);
+    }
+
+    .nav-container nav ul li:hover{
+    background: #474747d5;
+    transition: all .2s ease-in;
+}
+    .nav-container nav ul li:hover a{
+        color: #fff;
+    
+}
+    .nav-container nav.active{
+        left:0;
+    }
+
+     .top-bar{
+        padding: 0 2.8rem 0 2rem;
+    }
+    /* Header --MediaQuery */
+    header{
+        
+        width: 100vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0 3rem;
+        transition: all 0.5s;
+    }
+
+    header a{
+        display:block;
+    }
+
+    /* About Us */
+    .sub-title{
+        width:100%;
+        border-radius: 0;
+        text-align: center;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    /* Mission  */
+    .about-us .mission h4{
+        text-align: center;
+        font-size:1.6rem;
+    }
+
+    .about-us .mission p{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* facility */
+    .facility-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Programs */
+    
+    .programs{
+        padding : 0 2rem;
+    }
+    
+    .program{
+        grid-template-rows: auto auto 47px;
+    }
+    
+    .program img{
+        min-height: 250px;   }
+    
+    .explain{
+        padding: .6rem;
+    }
+
+    /* Location */
+    .map-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 467px 233.59px;
+    }
+    .map-responsive{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .map-responsive, .map-responsive iframe{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .left-box{
+        grid-column: 1/-1;
+        width:100%;
+        max-width: 100%;
+        min-width: 100%;
+        display:flex;
+    }
+
+    .text{
+        width:100%;
+        border-radius: 0 0 0 20px;
+
+    }
+    
+    .howtoget{
+        width:100%;
+        border-radius: 0 0 20px 0;
+    }
+
+    .left-box p{
+        text-align: center;
+    }
+
+    .wrapper{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 230px auto;
+    }
+
+    .wrapper>*{
+        padding:.5em;
+    }
+
+    .company-info{
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+
+    .company-info h3{
+        padding-top:1.5rem;
+    }
+
+    .register{
+        padding:1rem;
+    }
+
+   
+   
+}
+
+
+
+
+
+
+
+@media(max-width:860px){
+    .facility-container{
+        grid-template-columns: 1fr;
+    }
+    .facility-container a:nth-child(2){
+        grid-column: 1/2;
+    }
+    
+    .map-container{
+        grid-template-rows: 467px 383.94px;
+        padding-right: 1.3rem;
+        padding-left: 1.3rem;
+    }
+    
+    .left-box{
+        flex-direction: column;
+    }
+
+    .text{
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        border-radius: 0;
+    }
+
+    .howtoget{
+        padding-bottom: .7rem;
+        padding-top: .7rem;
+        border-radius: 0 0 20px 20px;
+    }
+     .register label{
+        font-size: .9rem;
+    }
+
+}

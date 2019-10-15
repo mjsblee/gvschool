@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/simplelightbox.min.css">
+        <script src="https://kit.fontawesome.com/859cc0cc9d.js" crossorigin="anonymous"></script>
+        <title>GV Soccer Academy</title>
+    </head>
+    <body>
+        <!--Top Container-->
+        <section class="top-container" id="home">
+            <div class="overlay">
+
+                <!--Navigation-->
+                <div class="top-bar">
+                    <a class="logo" href="#">
+                        <img src="img/small.png" alt="logo">
+                        <h1>Soccer<br>School</h1>
+                    </a>
+                    
+                    <div class="nav-container">
+                    <div class="toggle" onclick="toggle()">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </div>
+                    <nav id="navigation">
+                        <ul class="nav" onclick="toggle()">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about-us">About us</a></li>
+                            <li><a href="#programs">Programs</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+            <!--Header-->
+                <header id="header">
+                    <div class="header-top">
+                    <h1>Best <div>Facility</div><div>Coaches</div><div>School</div></h1>
+                    <p>#1 review on Hong Kong Football School App  </p>
+                    <a href="#about-us">Learn More</a>
+                    </div>
+                </header>
+            </div>
+        </section>
+       
+        <!--Top Container Ends Here-->
+
+        
+        <!--About Us-->
+        <section class="about-us" id="about-us">
+            <h2>GV Soccer School</h2>
+            <figure><img src="img/aboutUs.jpg" alt="soccer ball"></figure>
+            
+            <!--Mission-->
+            <div class="mission sub-container">
+                <h3 class="sub-title">Our Mission</h3>
+                <h4>Strong Leadership begins with us</h4>
+                <p><span>Our mission</span> is to positively impact the <span>development of youth</span> in our community by providing soccer and <span>life-enriching
+                opportunities</span> to young players of <span>all ages and playing abilities</span>, to create a <span>lifelong passion</span> for the sport of soccer,
+                and to help raise the level of soccer in our city and our nation. We strive to play an active role in the
+                <span>leadership</span>, development and <span>personal</span> growth of our players and staff by being an active member of our community through
+                service, partnerships and programs. Our ultimate goal as a club is to <span>encourage, inspire and empower each player</span> and
+                coach to be able to <span>reach the highest level possible</span> within the game and in life, while helping create leaders and
+                individuals that will inspire others to do the same.</p>      
+             </div>
+            
+            <!--Staff-->
+            <div class="staff sub-container">
+                <h3 class="sub-title">Staff</h3>
+                
+                <div class=card-container>
+                     
+                    <div class="card">
+                        <img src="img/sungwoo.png" alt="Sungwoo Lee">
+                        <div class="name">
+                            <figcaption>Sungwoo Lee</figcaption>
+                            <h4>Owner</h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/minji.png" alt="Minji Lee">
+                        <div class="name">
+                            <figcaption>Minji Lee</figcaption>
+                            <h4>President</h4>    
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/gavin.png" alt="Gavin Liu">
+                        <div class="name">
+                            <figcaption>Gavin Liu</figcaption>
+                            <h4>Coaching Director</h4>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/dahye.png" alt="Dahye Lee">
+                        <div class="name">
+                            <figcaption>Dahye Lee</figcaption>
+                            <h4>Program Coordinator</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        
+        <!--Facility-->
+            <div class="facility sub-container">
+                <h3 class="sub-title">Facility</h3>
+                <div class="facility-container">
+                
+                    <a href="img/office.jpg" class="big"><img src="img/office.jpg" alt="modern office"></a>
+                    <a href="img/field.jpg" class="big"><img src="img/field.jpg" alt="soccer field"></a>
+                    <a href="img/swimming.jpg" class="big"><img src="img/swimming.jpg" alt="swimming pool"></a>
+                 <a href="img/gym.jpg" class="big"><img src="img/gym.jpg" alt="gym"></a>
+                    <a href="img/indoor.jpg" class="big"><img src="img/indoor.jpg" alt="indoor soccer field"></a>
+                 </div>
+                
+            </div>
+        </section>
+
+    <!--Programs-->
+        <section class="program-container" id="programs">
+            <div class="overlay">
+                <h2>Programs</h2>
+                <div class="programs">
+                    <div class="program">
+                        <img src="img/one.jpg" alt="one on one training">
+                        <div class="explain">
+                            <h3>Trivate Training</h3>
+                            <p>Specially customized to each individuals of all ages and levels needs.</p>
+                        </div>
+                        <a href="#register" onclick="match('private')">Register</a>
+                    </div>
+                    <div class="program">
+                        <img src="img/smallGroup.png" alt="small group training">
+                        <div class="explain">
+                            <h3>Small Group Training</h3>
+                            <p>Designed for groups (2-4 players) at similar skill level focusing on technical, tactical and
+                            position based.</p>
+                        </div>
+                        <a href="#register" onclick="match('smallGroup')">Register</a>
+                    </div>
+                    <div class="program">
+                        <img src="img/strength.jpg" alt="strength conditioning">
+                        <div class="explain">
+                            <h3>Individual Strength & Conditioning</h3>
+                            <p>Soccer specific strength and conditioning coached by Gavin Liu, former HKFA SC.</p>
+                        </div>
+                        <a href="#register"onclick="match('strength')">Register</a>
+                    </div>
+                    <div class="program">
+                        <img src="img/goal.jpg" alt="goalkeeper straining">
+                        <div class="explain">
+                            <h3>GK Training</h3>
+                            <p>Provided on an individual or group basis coached by a guest coach from HKFA.</p>
+                        </div>
+                        <a href="#register">Register</a>
+                    </div>
+                    <div class="program">
+                        <img src="img/winter.jpg" alt="striker training">
+                        <div class="explain">
+                            <h3>Striker Training</h3>
+                            <p>From shooting for power, finest finishing, to escaping defenders to score from a cross.</p>
+                        </div>
+                        <a href="#register">Register</a>
+                    </div>
+                    <div class="program">
+                        <img src="img/saturday.jpg" alt="saturday program">
+                        <div class="explain">
+                            <h3>Saturday Soccer</h3>
+                            <p>Allows players to stay at the top of their game during the off season with differently themeed sessions</p>
+                        </div>
+                        <a href="#register">Register</a>
+                    </div>
+            </div>
+        </section>
+     
+        <!--Location-->
+        <section class="location-container" id="location">
+            <h2>Location</h2>
+            <div class="map-container">
+                <div class="left-box">
+                    <div class="text">
+                        <p>GV Soccer School</p>
+                        <p>City Point</p>
+                        <p>48號 Wing Shun St</p>
+                        <p>Tsuen Wan</p>
+                        <p>Hong Kong</p>
+                     </div>
+                     <div class="howtoget">
+                        <p class="icon"><i class="fas fa-subway"></i></p>
+                        <p>Tsuen Wan West Station</p>
+                        <p class="icon"><i class="fas fa-bus-alt"></i></p>
+                        <p>Bus A10</b></p>
+                    </div>
+                </div>
+                <div class="map-responsive">
+                     <iframe
+                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.7140940397717!2d114.11238661501659!3d22.364421846215627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f8ea25e965b1%3A0xe4e57deb0b16eb4b!2sCity%20Point!5e0!3m2!1sen!2skr!4v1570174671545!5m2!1sen!2skr"
+                         width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact"> 
+            <h2>Contact</h2>
+            <div class="wrapper">
+                <div class="company-info">
+                    <h3>GV Soccer School</h3>
+                    <ul>
+                        <li><span><i class="fab fa-whatsapp"></i></span>gvsoccer</li>
+                        <li><span><i class="far fa-envelope"></i></span>gvschool@gmail.com</li>
+                        <li><span><i class="fas fa-phone-volume"></i></span> +852 (555) 6666</li>
+                    </ul>
+                </div>
+                <div class="register" id="register">
+                    <form action="">
+                        <p>
+                            <label>First Name</label>
+                            <input type="text" name="firstName" required>
+                        </p>
+                        <p>
+                            <label>Last Name</label>
+                            <input type="text" name="lastName" required>
+                        </p>
+                        <p>
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" required>
+                        </p>
+                        <p>
+                            <label>Email Address</label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p class="full">
+                            <label>About</label>
+                            <select>
+                                <option value="Select Here" selected hidden disabled>
+                                    Select Here
+                                </option>
+                                <option value="trivate" id="trivate">Trivate Training</option>
+                                <option value="smallGroup" id="smallGroup">Small Group Training</option>
+                                <option value="strength" id="strength">Individual Strength & Conditioning</option>
+                                <option value="gk" id="gk">GK Training</option>
+                                <option value="striker" id="striker">Striker Training</option>
+                                <option value="saturday" id="saturday">Saturday Soccer</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </p>
+                        <p class="full">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" class="full"></textarea>
+                        </p>
+                        <p class="full submit">
+                            <input type="submit"value="register">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <script>
+            //Toggle Menu JS
+            function toggle(){
+                    var x = document.getElementById('navigation');
+                    if (x.className != "active") {
+                        x.classList.add('active');
+                    } else {
+                        x.classList.remove('active');
+                    }
+                }
+            //Toggle Menu JS Ends Here
+
+            //Register Matching
+            
+        </script>
+
+        <!-- Light Box JS -->
+        <!--Code for Gallery to work-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/simple-lightbox.min.js"></script>
+        <script>
+            $(function () {
+                const $gallery = $('.facility-container a').simpleLightbox();
+            });
+        </script>
+        
+
+    </body>
+</html>
+ 
